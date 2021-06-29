@@ -5,7 +5,20 @@
 //  In the terminal start with:      npm init -y      This builds the json packet
 //  Next terminal command:          npm i express       This installs express - why not cors?    
 
-// add .gitignore to top layer and add node_modules/    - this stops all of our dependency modules from being uploaded to github
+// add .gitignore to top layer and code:     node_modules/    - this stops all of our dependency modules from being uploaded to github
+
+/* terminal command line to push:
+git init
+git add .
+git commit -m 'message'
+git remote add origin https://github.com/WdRgrs/{directory name}.git
+git branch -M main
+git push -u origin main
+
+
+git add .   -after the initial commit, these are the only git commands to continue to push
+git push
+*/
 
 
 const express = require('express');  // This function starts your .js requiring express to be used
