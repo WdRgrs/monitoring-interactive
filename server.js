@@ -45,5 +45,5 @@ app.get('/', function(req, res) {
                             //path.join - join the location of index.html to the current directory
 });         //__dirname - always the first argument of the directory at this location (monitoring-interactive)
 
-const port = process.eventNames.PORT || 4545;
+const port = process.env.PORT || 4545;
 app.listen(port, function() {console.log(`Server is working on ${port}`)});   // npm start ---- after this point we can 'npm start' to see if the server will run
