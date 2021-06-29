@@ -40,7 +40,8 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 app.get('/', function(req, res) {
-    rollbar.log('Hello World')
+    rollbar.log('Hello World');
+    rollbar.error('User tried to access a broken link');
     res.sendFile(path.join(__dirname, '/public/index.html')) //res is a built in body, sendfile being a build in method to send back a file at a specific path
                             //path.join - join the location of index.html to the current directory
 });         //__dirname - always the first argument of the directory at this location (monitoring-interactive)
